@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+
+.main1{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(105, 103, 103);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main1 .top{
+    width: fit-content;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.f-add{
+    height: 45px;
+    width: 300px;
+    border-radius: 5px;
+    border: solid 2px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.f-add select{
+    height: 100%;
+    width: 80%;
+    border: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.f-add select:active{
+    outline: none;
+}
+
+.f-add button{
+    width: 20%;
+    font-size: 20px;
+    font-weight: 900;
+    border: none;
+}
+
+.bottom{
+    margin-top: 50px;
+    width: 50%;
+    /* height: 300px; */
+    background-color: rgb(26, 17, 45);
+}
+
+.bottom .for-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bottom .for-input1{
+    flex-direction: column-reverse;
+}
+
+.bottom .inpSelect{
+    width: 200px;
+    padding: 4px;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.bottom .S_block{
+    display: block;
+}
+
+.bottom .inp-box{
+    /* height: 20px; */
+    width: 300px;
+    padding-left: 40px;
+    background-color: rgb(26, 17, 45);
+}
+
+.bottom button{
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+.bottom .subBtn{
+    width: fit-content;
+    padding: 0 20px;
+}
+
+.bottom .inp-label{
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bottom .remove{
+    height: 20px;
+    width: 20px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+
+.main-form{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.main-form #form1{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-form #form1 .inp-label{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.main-form #form1 input[type=text]{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.main-form #form1 button{
+    width: fit-content;
+    padding: 5px 20px;
+    font-family: 25px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 5px;    
+}
+
+.main-form #outForm{
+    /* height: 400px; */
+    width: 24%;
+    background-color: rgb(26, 24, 24);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    position: absolute;
+    transform: scale(0);
+    transition: all .3s;
+}
+
+
+.form_c{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 35%;
+    left: 40%;
+    height: 150px;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow:  0 0 8px;
+    background-color: white;
+    transition: all .3s;
+}
+
+.form_c .card{
+    height: 100%;
+}
+
+.c_btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.c_btns button{
+    height: 35px;
+    width: 100px;
+    border: solid 2px #0d6efd;
+    background-color: transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.c_btns .color_btn1:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.c_btns .color_btn2{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.row{
+    width: 100%;
+}
+
+#form1 .col-5{
+    text-align: center;
+}
